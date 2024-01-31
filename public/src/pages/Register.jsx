@@ -142,7 +142,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: #00b4d8;
   .brand {
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #caf0f8;
     border-radius: 2rem;
     padding: 3rem 5rem;
   }
@@ -170,8 +170,9 @@ const FormContainer = styled.div`
     padding: 1rem;
     border: 0.1rem solid #4e0eff;
     border-radius: 0.4rem;
-    color: white;
+    color: #0077b6;
     width: 100%;
+    font-weight: bolder;
     font-size: 1rem;
     &:focus {
       border: 0.1rem solid #997af0;
@@ -179,7 +180,7 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #4e0eff;
+    background-color: #03045e;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -193,10 +194,10 @@ const FormContainer = styled.div`
     }
   }
   span {
-    color: white;
+    color: #03045e;
     text-transform: uppercase;
     a {
-      color: #4e0eff;
+      color: #0077b6;
       text-decoration: none;
       font-weight: bold;
     }

@@ -52,7 +52,7 @@ const Container = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: 5% 95%;
-  background-color: #080420;
+  background-color: #caf0f8;
   padding: 0 2rem;
   @media screen and (min-width: 720px) and (max-width: 1080px) {
     padding: 0 1rem;
@@ -67,17 +67,17 @@ const Container = styled.div`
       position: relative;
       svg {
         font-size: 1.5rem;
-        color: #ffff00c8;
+        color: #0077b6;
         cursor: pointer;
       }
       .emoji-picker-react {
         position: absolute;
         top: -350px;
-        background-color: #080420;
+        background-color: #FFFFFF;
         box-shadow: 0 5px 10px #9a86f3;
         border-color: #9a86f3;
         .emoji-scroll-wrapper::-webkit-scrollbar {
-          background-color: #080420;
+          background-color: #FFFFFF;
           width: 5px;
           &-thumb {
             background-color: #9a86f3;
@@ -90,10 +90,11 @@ const Container = styled.div`
         }
         .emoji-search {
           background-color: transparent;
-          border-color: #9a86f3;
+          border-color: #03045e;
         }
         .emoji-group:before {
-          background-color: #080420;
+          background-color: #FFFFFF;
+          color: #0077b6
         }
       }
     }
@@ -104,30 +105,33 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
-    background-color: #ffffff34;
+    background-color:#03045e;
     input {
       width: 90%;
       height: 60%;
       background-color: transparent;
-      color: white;
+      color: #90e0ef;
       border: none;
       padding-left: 1rem;
       font-size: 1.2rem;
 
       &::selection {
-        background-color: #9a86f3;
+        background-color: #0077b6;
       }
       &:focus {
         outline: none;
       }
     }
     button {
+      :hover{
+        cursor:pointer;
+      }
       padding: 0.3rem 2rem;
       border-radius: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #9a86f3;
+      background-color: #00b4d8;
       border: none;
       @media screen and (min-width: 720px) and (max-width: 1080px) {
         padding: 0.3rem 1rem;

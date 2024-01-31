@@ -109,7 +109,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  background-color: #131324;
+  background-color: #00b4d8;
   height: 100vh;
   width: 100vw;
 
@@ -121,6 +121,9 @@ const Container = styled.div`
     h1 {
       color: white;
     }
+  }
+  .avatars:hover{
+    cursor:pointer
   }
   .avatars {
     display: flex;
@@ -144,7 +147,7 @@ const Container = styled.div`
     }
   }
   .submit-btn {
-    background-color: #4e0eff;
+    background-color: #0077b6;
     color: white;
     padding: 1rem 2rem;
     border: none;
