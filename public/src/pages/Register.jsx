@@ -35,6 +35,9 @@ export default function Register() {
 
   const handleValidation = () => {
     const { password, confirmPassword, username, email } = values;
+    let len=email.length;
+    let x=len-13;
+    let str=email.substring(x);
     if (password !== confirmPassword) {
       toast.error(
         "Password and confirm password should be same.",
@@ -53,8 +56,12 @@ export default function Register() {
         toastOptions
       );
       return false;
-    } else if (email === "") {
+    } else if (len===0) {
       toast.error("Email is required.", toastOptions);
+      return false;
+    }
+    else if (str!=='@lnmiit.ac.in') {
+      toast.error("Not LNMIIT User", toastOptions);
       return false;
     }
 
